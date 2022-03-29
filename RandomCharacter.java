@@ -64,19 +64,19 @@ public class RandomCharacter {
             randChar += rc.getRandomCharacter();
         }
 
-        System.out.println(lower);
-        System.out.println(upper);
-        System.out.println(digits);
-        System.out.println(randChar);
+        System.out.println("Generate 15 random lowercase characters: " + lower);
+        System.out.println("Generate 15 random uppercase characters: " + upper);
+        System.out.println("Generate 15 random digit characters: " + digits);
+        System.out.println("Generate 15 random alphanumeric characters: " + randChar);
 
         char low = rc.getRandomLowerCaseLetter();
         char upp = rc.getRandomUpperCaseLetter();
         char dig = rc.getRandomDigitCharacter();
         char rch = rc.getRandomCharacter();
 
-        System.out.println("Is " + low + " prime: " + rc.isPrime(low));
-        System.out.println("Is " + upp + " prime: " + rc.isPrime(upp));
-        System.out.println("Is " + dig + " prime: " + rc.isPrime(dig));
-        System.out.println("Is " + rch + " prime: " + rc.isPrime(rch));
+        System.out.println("getRandomLowerCaseLetter() - Is " + low + " prime: " + rc.isPrime(low));
+        System.out.println("getRandomUpperCaseLetter() - Is " + upp + " prime: " + rc.isPrime(upp));
+        System.out.println("getRandomDigitCharacter() - Is " + dig + " prime: " + rc.isPrime(dig));
+        System.out.println("getRandomCharacter() - Is " + rch + " prime: " + rc.isPrime(rch));
     }
 }
