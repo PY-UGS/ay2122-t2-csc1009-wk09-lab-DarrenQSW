@@ -26,27 +26,28 @@ public class RandomCharacterTest {
         assertTrue(Character.isLowerCase(randomCharacter.getRandomLowerCaseLetter()));
     }
 
-    // Verifies getRandomUpperCaseLetter() returns a lowercase char
+    // Verifies getRandomUpperCaseLetter() returns an uppercase char
     @RepeatedTest(15)
     @DisplayName("Get a random uppercase letter")
     public void testGetRandomUpperCaseLetter() {
         assertTrue(Character.isUpperCase(randomCharacter.getRandomUpperCaseLetter()));
     }
 
-    // Verifies getRandomDigitCharacter() returns a lowercase char
+    // Verifies getRandomDigitCharacter() returns a digit char
     @RepeatedTest(15)
     @DisplayName("Get a random digit character from 0 to 9")
     public void testGetRandomDigitCharacter() {
         assertTrue(Character.isDigit(randomCharacter.getRandomDigitCharacter()));
     }
 
-    // Verifies getRandomCharacter() is alphanumeric
+    // Verifies getRandomCharacter() returns an alphanumeric char
     @RepeatedTest(15)
     @DisplayName("Get a random alphanumeric character")
     public void testGetRandomCharacter() {
         assertTrue(ALPHANUMERIC.indexOf(randomCharacter.getRandomCharacter()) != -1);
     }
 
+    // Verifies isPrime() will return true if prime, false otherwise
     @RepeatedTest(15)
     @DisplayName("Check if character is prime")
     public void testIsPrime() {
